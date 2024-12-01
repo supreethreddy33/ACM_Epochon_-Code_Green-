@@ -12,7 +12,7 @@ Ensure the following Python libraries are installed to run the code:
 - `scikit-learn`: For machine learning models and metrics.
 - `numpy`: For numerical computations.
 
-#Dataset
+# Dataset
 The dataset used, CO2Emission_LifeExp.csv, includes the following columns:
 
 Code: Country code (which is dropped for prediction).
@@ -20,15 +20,15 @@ Country: Country name (also dropped for prediction).
 CO2Emissions: The target variable representing CO2 emissions.
 Other Features: Various socio-economic and environmental factors such as energy consumption, life expectancy, etc.
 Project Steps
-#Data Loading and Preprocessing:
+# Data Loading and Preprocessing:
 The data is loaded from a CSV file.
 Irrelevant columns (Code and Country) are dropped as they are not needed for prediction.
 Missing values are removed to ensure clean data for training.
-#Data Splitting:
+# Data Splitting:
 The data is split into training and testing sets using an 80/20 split.
-#Model Training:
+# Model Training:
 A Random Forest Regressor model is trained using the preprocessed training data to predict the CO2 emissions target variable.
 Model Prediction and Evaluation:
 The model makes predictions on the test data, and its performance is evaluated using the R-squared score, which shows how well the model explains the variance in CO2 emissions.
-#Output
+# Output
 The model's performance is measured using the R-squared score, which indicates how well the model can predict CO2 emissions. A score closer to 1 suggests that the model is performing well in explaining the variance in the target variable.
